@@ -1,0 +1,14 @@
+h1.redHeader{
+    color: red;
+    margin:auto;
+    display: flex;
+    
+  }
+  
+  h4.blueHeader{
+    color: blue;
+    
+    display: flex;
+    
+    
+  }
