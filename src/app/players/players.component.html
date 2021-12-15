@@ -3,8 +3,9 @@
 <ul class="players">
   <li *ngFor="let player of players">
     <a routerLink="/detail/{{player.id}}">
-      <span class="badge">{{player.id}}</span> {{player.name}} {{player.rating}} {{player.role}}
+      <span class="badge">{{player.id}}</span> {{player.name}} 
     </a>
+    <a>Rating: {{player.rating}} | Best Pos: {{player.role}}</a>
     <button class="delete" title="delete player"
   (click)="delete(player)">x</button>
   </li>
