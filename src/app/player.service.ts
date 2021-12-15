@@ -69,6 +69,16 @@ export class PlayerService {
       catchError(this.handleError<Player[]>('searchPlayers', []))
     );
   }
+
+
+  deletePlayer(id: number): Observable<Player> {
+    const url = `${this.playersUrl}/${id}`;
+  
+    return this.http.delete<Player>(url, this.httpOptions).pipe(
+      tap(_ => this.log(`deleted player id=${id}`)),
+      catchError(this.handleError<Player>('deletePlayer'))
+    );
+  }
   
     /**
    * Handle Http operation that failed.

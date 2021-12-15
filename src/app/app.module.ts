@@ -8,11 +8,13 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { PlayersComponent } from './players/players.component';
+import { PlayerDetailComponent } from './player-detail/player-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlayersComponent
+    PlayersComponent,
+    PlayerDetailComponent
   ],
   imports: [
     BrowserModule,
